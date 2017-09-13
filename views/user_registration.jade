@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title User Registration 
+    meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+  
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css')
+    link(href='dist/build.msg-register.min.css', rel='stylesheet')
+
+    script(src='dist/build.js')
+  body
+    .main.container
+      .row
+        .main-login.main-center
+          h2.display-4.m-b-2.title  Sign Up
+          form#registration_form(method='POST', action='/userregistration')
+            .input-group
+              span.input-group-addon
+                i.material-icons face
+              input#FirstName.form-control(type='text', placeholder='First Name', name='firstname')
+            .input-group
+              span.input-group-addon
+                i.material-icons face
+              input#LastName.form-control(type='text', placeholder='Last Name', name='lastname')
+            .input-group
+              span.input-group-addon
+                i.material-icons email
+              input#Email.form-control(type='text', placeholder='Email', name='email')
+            .input-group
+              span.input-group-addon
+                i.material-icons contacts
+              input#PhoneNumber.form-control(type='text', placeholder='Phone Number', name='phonenumber')
+            .text-center
+              button#register_button.btn.btn-primary.btn-lg  Register 
+
+            if flash
+              div.alert(class='#{flash.type}')
+                ul
+                - for (var i = 0; i < flash.messages.length; i++) {
+                  li #{flash.messages[i].msg}
+                - }
+                ul

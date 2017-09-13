@@ -1,0 +1,50 @@
+{
+  "name": "registration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shravankumarm/MSG-Registration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shravankumarm/MSG-Registration/issues"
+  },
+  "homepage": "https://github.com/shravankumarm/MSG-Registration#readme",
+  "dependencies": {
+    "async": "^2.1.4",
+    "body-parser": "^1.16.0",
+    "bootstrap": "^3.3.7",
+    "bower": "^1.8.0",
+    "cron": "^1.2.1",
+    "debug": "^2.6.1",
+    "express": "^4.14.1",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "moment": "^2.17.1",
+    "mongodb": "^2.2.22",
+    "mongoose": "^4.8.2",
+    "request": "^2.79.0",
+    "sendgrid": "^4.7.1",
+    "twilio": "^2.11.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "express-validator": "^3.1.2",
+    "file-system": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-uglify": "^2.0.1",
+    "nodemon": "^1.11.0"
+  }
+}
